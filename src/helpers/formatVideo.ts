@@ -14,6 +14,9 @@ export default async function formatVideo(video: any, speedDate: boolean = false
       video.artist = splited[1]
       video.title = splited[2]
     }
+
+    console.log("Video Meta Informations", video)
+    
     // Date formating
     let publishedAt: Date = new Date(Date.now())
     if (speedDate) {
